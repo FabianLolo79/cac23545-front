@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaC#23545 - Tablas clase2</title>
+</head>
+<body>
+    <h1>Listado de Alumnos</h1>
+    <table border="1" width="100%">
+        <!-- head: columnas -->
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Apellido
+                </th>
+                <th>
+                    Dni
+                </th>
+                <th>
+                    Curso
+                </th><th>
+                    Email
+                </th>
+                <th>
+                    Turno
+                </th>
+                <th>
+                    Materias
+                </th>
+            </tr>
+        </thead>
+
+        <!-- body: datos -->
+        <tbody>
+            <tr>
+                <td>
+                    fila1 col1
+                </td>
+                <td>
+                    fila1 col2
+                </td>
+                <td>
+                    fila1 col3
+                </td>
+                <td >
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    fila2 col1
+                </td>
+                <td>
+                    fila2 col2
+                </td>
+                <td>
+                    fila2 col3
+                </td>
+                <td >
+                
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td colspan="1"> <!-- la prpiedad colspan expande la celda -->
+                    fila3 col1
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"> <!-- la prpiedad colspan expande la celda -->
+                    fila4 col1
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="3"> <!-- la prpiedad colspan expande la celda -->
+                    fila5 col1
+                </td>
+            </tr>
+        </tbody>
+        <!-- foot: pié de página-->
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    Total alumnos: 2
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <a href="formularios.html">Volver</a>
+</body>
+</html>

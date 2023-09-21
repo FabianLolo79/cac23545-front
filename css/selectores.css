@@ -1,0 +1,44 @@
+/* variables  */
+:root {
+    --btn-base-height: 15vh; 
+    /* height: var(--btn-base-height) */
+}
+
+div p {
+    border: 1px solid green;
+    font-size: 25px;
+}
+
+/* selector de etiqueta */
+p > strong {
+    color: orange;
+}
+
+.segundoDiv > p > strong {
+    border: 1px solid green;
+    font-size: 25px; /* no anda mepa */
+}
+
+/* el primer hermano p de h1 */
+h1 + p {
+    font-size: 60px;
+    color: brown;
+}
+
+/* hermanos generales */
+h2 ~ p { /* ALT + 126 */
+    border: 2px solid blueviolet;
+    font-size: 3em;
+    
+}
+
+/* selector de atributo */
+a[title='google'] {
+    font-size: 3em;
+    color: aquamarine;
+}
+
+/* que contenga */
+a[href*='insta'] {
+    color: red;
+}

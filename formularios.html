@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaC#23545 - formularios clase2</title>
+</head>
+<body>
+    <!-- formularios -->
+    <!-- alta de alumnos -->
+        <fieldset>
+            <legend>Alumno</legend>
+            <form action="listado-alumnos.html">
+                <label for="nombre">Nombre:</label>
+                <input type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    required>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" 
+                    id="apellido"
+                    name="apellido"
+                    required>
+                <br>
+                <label for="dni">Dni:</label>
+                <input id="dni"
+                    name="dni"
+                    type="text" 
+                    maxlength="10"
+                    required>
+                <br>
+                <!-- select opciones que puedo seleccionar -->
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <option value=""></option>
+                    <option selected value="23545">#23545 - CaC FullStack en Java </option>
+                    <option value="23321">#23321 - MindHub desarrollador BackEnd en Java </option>
+                    <option value="23158">#23158 - Desarrollador de videojuegos en C# </option>
+                </select>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" 
+                    name="email" 
+                    id="email"
+                    required>
+                <br>
+        
+                <!-- radio button -->
+                <label>Turno:</label>
+                <br>
+                <span>Mañana</span>
+                <input type="radio"
+                    name="turno"
+                    value="mañana">
+                <span>Tarde</span>
+                <input type="radio"
+                    name="turno"
+                    value="tarde">
+                <span>Noche</span>
+                <input type="radio"
+                    name="turno" 
+                    value="noche"
+                    checked>
+                <br>
+                <br>
+                <!--  checkbox  -->
+                <label for="materias">Materias:</label>
+                <br>
+                <span>Análisis 1</span>
+                <input type="checkbox"
+                    name="materia"
+                    value="analisis1">
+                <span>Programación 1</span>
+                <input type="checkbox"
+                    name="materia"
+                    value="programacion1"
+                    checked
+                    disabled>
+        
+                <br>    
+                <hr>
+                <button type="submit">
+                    Grabar
+                </button>
+        </fieldset>
+    </form>
+    <hr>
+    <a href="index.html">HOME</a>
+    
+</body>
+</html>
