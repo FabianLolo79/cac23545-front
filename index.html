@@ -1,7 +1,7 @@
 <!-- esto es un comentario -->
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -32,32 +32,69 @@
     </a>
 
     <!-- imagen (no tiene cierre) -->
-    <img    src="https://www.cinemascomics.com/wp-content/uploads/2022/06/serie-darth-vader-hayden-christensen-star-wars.jpg"
-            width="50%"
-            alt="darth vader">
+    <img src="https://www.cinemascomics.com/wp-content/uploads/2022/06/serie-darth-vader-hayden-christensen-star-wars.jpg"
+        width="50%" alt="darth vader">
 
-    <img    src="https://www.cinemascomics.com/wp-content/uploads/2022/06/serie-darth-vader-hayden-christensen-star-wars.jpg"
-            width="50%"
-            alt="darth vader">
+    <img src="https://www.cinemascomics.com/wp-content/uploads/2022/06/serie-darth-vader-hayden-christensen-star-wars.jpg"
+        width="50%" alt="darth vader">
 
-            <!-- linea horizontal -->
-            <hr>
-            <p>
-                <b>Lorem</b> <i>ipsum</i> <em>dolor</em> <sup>sit</sup> <sub>amet</sub> <mark>consectetur</mark> <del>adipisicing</del> elit. Iste, quod?
-            </p>
+    <!-- linea horizontal -->
+    <hr>
+    <p>
+        <b>Lorem</b> <i>ipsum</i> <em>dolor</em> <sup>sit</sup> <sub>amet</sub> <mark>consectetur</mark>
+        <del>adipisicing</del> elit. Iste, quod?
+    </p>
 
-            <!-- listas: no ordenadas -->
-            <ul>
-                <li>opción 1</li>
-                <li>opción 2</li>
-                <li>opción 3</li>
-            </ul>
+    <!-- listas: no ordenadas -->
+    <ul>
+        <li>opción 1</li>
+        <li>opción 2</li>
+        <li>opción 3</li>
+    </ul>
 
-            <!-- listas: ordenadas -->
-            <ol>
-                <li>opción 1</li>
-                <li>opción 2</li>
-            </ol>
+    <!-- listas: ordenadas -->
+    <ol>
+        <li>opción 1</li>
+        <li>opción 2</li>
+    </ol>
+    <section>
+        <button 
+            type="button" 
+            class="btn btn-success" 
+            onclick="alert('Hola')">
+            SALUDAR
+        </button>
+        <button 
+            type="button" 
+            class="btn btn-success" 
+            onclick="prompt('Ingrese su nombre')">
+            Nombre
+        </button>
+        <button 
+            type="button" 
+            class="btn btn-success" 
+            onclick="confirm('¿Confirma algo?')">
+            CONFIRMAR
+        </button>
+        <button 
+            type="button" 
+            class="btn btn-success" 
+            onclick="console.log('Hola mundo js')">
+            ENVIAR POR CONSOLA
+        </button>
+    </section>
+    <script>
+        /*todo lo que pone acá es javascript */
+        //funciones nativas de js: vienen de fábrica
+        //y andan en todos los browser
+        // alert('cargando');
+        
+        let nombreIngresado = prompt('ingresá tu nombre');
+        console.log('1:', nombreIngresado);
+        //confirm('¿Te gusta el curso?');
+        //console.log('Primer día de javascript');
+    </script>
 </body>
+
 
 </html>
